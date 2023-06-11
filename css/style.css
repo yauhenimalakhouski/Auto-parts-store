@@ -1,0 +1,1513 @@
+@import url("FuturaPT-Medium/style.css");
+@import "style_header_footer.css";
+
+@-webkit-keyframes MyAnimation2 {
+		from { -webkit-transform: scale(1); transform: scale(1);}
+		to {-webkit-transform: scale(1.25);transform: scale(1.25);}
+	}
+
+@keyframes MyAnimation2 {
+		from { -webkit-transform: scale(1); transform: scale(1);}
+		to {-webkit-transform: scale(1.25);transform: scale(1.25);}
+	}
+
+@-webkit-keyframes MyAnimation3 {
+	from { -webkit-transform: scale(0.25) translate(200%, 200%); transform: scale(0.25) translate(200%, 200%);}
+	to { -webkit-transform: scale(1) translate(0, 0); transform: scale(1) translate(0, 0);}
+}
+
+@keyframes MyAnimation3 {
+	from { -webkit-transform: scale(0.25) translate(200%, 200%); transform: scale(0.25) translate(200%, 200%);}
+	to { -webkit-transform: scale(1) translate(0, 0); transform: scale(1) translate(0, 0);}
+}
+
+body {
+		margin: 0; 
+		font-family: 'Futura PT', sans-serif;
+		font-size: 16px;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
+		-webkit-text-size-adjust: none;
+	}
+
+	.main {
+		margin: 0 11%;
+	}
+
+	.main div.main_banner {
+		min-height: 511px;
+		color: #FFFFFF;
+	}
+
+	.main .main_banner .text_slider .block_text .extra h1 {
+		font-size: 64px;
+		margin: 5px 0;
+	} 
+
+	.main .main_banner .text_slider .block_text .extra h2 {
+		padding-top: 20px;
+		font-size: 36px;
+		margin-bottom: 20px;
+		line-height: 46px;
+		text-transform: uppercase;
+	} 
+
+	.main .main_banner .text_slider .block_text .extra.black {
+		color: black;
+		padding-top: 40px;
+	}
+
+	.main .main_banner .text_slider .block_text .extra.black h2 {
+		margin-top: 210px;
+	} 
+
+	.main .main_banner a {
+		width: 200px;
+		margin-bottom: 78px;
+	}
+
+	.main .main_banner .banner_btm {
+		width: 200px;
+	    font-size: 18px; 
+	    border: transparent;   
+	    outline: none;
+	    padding: 20px 50px 20px 60px;
+		background: url('../images/Main/Arrow_1.svg') 168px 50% no-repeat #C82132;
+	    margin: 0;
+		text-transform: uppercase;
+		border-radius: 5px;
+		color: #FFFFFF;
+	}
+
+	.main .main_banner {
+		-webkit-animation: MyAnimation3 2s;
+		        animation: MyAnimation3 2s;
+	}
+
+	.main .main_banner .banner_btm:hover {
+		cursor: pointer;
+		color: black;
+	}
+
+	.text_slider {
+	    width: 100%;
+	    height: 511px;
+	    position: relative;
+	}
+
+	.text_slider .block_text {
+	    height: 100%;
+	    width: 100%;
+	}
+
+	.text_slider .block_text div {
+	    height: 100%;
+	    width: 100%;					
+	}
+
+	.text_slider .block_text div img {
+	    height: 100%;
+	    width: 100%;
+		border-radius: 20px;		
+	}
+
+	.text_slider .block_text div div {
+	    position: absolute;
+		left: 0;
+		top: 0;
+		padding-left: 165px;
+		padding-top: 60px;
+		width: 70%;
+	}
+
+	.btm-slides_1 {
+	    position: absolute;
+	    bottom: 40px;
+	    left: 305px;			
+	    -webkit-transform: translateX(-50%);			
+	        -ms-transform: translateX(-50%);			
+	            transform: translateX(-50%);
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	}
+
+	.btm-slides_1 span{
+	    height: 5px;
+	    width: 50px;
+	    margin: 0 3px;
+	    cursor: pointer;
+	}
+
+	.pokazatel-snimka_1{
+	    position: absolute;
+	    top: 50%;
+	    -webkit-transform: translateY(-50%);
+	        -ms-transform: translateY(-50%);
+	            transform: translateY(-50%);
+	    width: 45px;
+	    cursor: pointer;
+	    border: 2px solid white;
+	    background: rgba(255,255,255,0.1);
+	}
+
+	.pokazatel-snimka_1:hover{
+	    background: rgba(255,255,255,0.2);
+	}
+
+	.right_1{
+	    right: 0;
+		text-align: right;
+	}
+
+	.pokazatel-snimka_1 span{
+	    line-height: 41px;
+	    font-size: 35px;
+		color: white;
+	}
+
+	.main div.main_cat {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-rows: 1fr 40px 1fr 40px 1fr 40px 1fr;
+		grid-template-rows: repeat(4, 1fr);
+		-ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 40px 16px;
+	}
+
+	.main_banner + h1 {
+		margin-top: 65px;
+		font-size: 48px;
+	}
+
+	.main div.main_cat_tire {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2 ;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1 / 2;
+		background: url('../images/Main/Tire_1.jpg') no-repeat;
+		-webkit-box-shadow: 0px 3.99641px 54.9506px rgba(133, 133, 133, 0.25);
+		        box-shadow: 0px 3.99641px 54.9506px rgba(133, 133, 133, 0.25);
+		background-size: 100% 100%;
+		color: white;
+	}
+
+	.main div.main_cat_tire h1,
+	.main div.main_cat_supply_sys h1,
+	.main div.main_cat_cooling_sys h1,
+	.main div.main_cat_clutch h1,
+	.main div.main_cat_transmission h1,
+	.main div.main_cat_cardan h1,
+	.main div.main_cat_bridge h1,
+	.main div.main_cat_suspension h1,
+	.main div.main_cat_wheel h1,
+	.main div.main_cat_brake h1,
+	.main div.main_cat_steering h1,
+	.main div.main_cat_electro h1,
+	.main div.main_cat_heating h1 {
+		padding: 35px 0 40px 40px;
+		margin: 0;
+		font-size: 28px;
+	}
+
+	.main div.main_cat_tire p {
+		margin-top: 0;
+		font-size: 20px;
+		line-height: 26px;
+		padding-left: 40px;	
+		padding-bottom: 20px;
+	}
+
+	.main .main_cat .main_cat_tire a .main_cat_tire_btm {
+	    border: transparent;   
+	    padding: 0 50px 20px 40px;
+		background: url('../images/Main/Arrow_2.svg') 125px 15% no-repeat;
+	    margin: 0;
+	    font-size: 20px;
+		color: white;
+	}
+
+	.main .main_cat .main_cat_tire a .main_cat_tire_btm:hover,
+	.about_company div a .about_company_btm:hover,
+	.news .news_elem_1 .news_date_link_1 a .news_btm:hover,
+	.news .news_elem_2 .news_date_link_2 a .news_btm:hover,
+	.news .news_elem_3 .news_date_link_3 a .news_btm:hover {
+		cursor: pointer;
+		color: red;
+	}
+
+	.main .main_cat .main_cat_end a .main_cat_end_btm:hover {
+		cursor: pointer;
+		color: black;
+	}
+
+	.main .main_cat .main_cat_tire svg,
+	.main .main_cat .main_cat_supply_sys svg,
+	.main .main_cat .main_cat_cooling_sys svg,
+	.main .main_cat .main_cat_clutch svg,
+	.main .main_cat .main_cat_transmission svg,
+	.main .main_cat .main_cat_cardan svg,
+	.main .main_cat .main_cat_bridge svg,
+	.main .main_cat .main_cat_suspension svg,
+	.main .main_cat .main_cat_wheel svg,
+	.main .main_cat .main_cat_brake svg,
+	.main .main_cat .main_cat_steering svg,
+	.main .main_cat .main_cat_electro svg,
+	.main .main_cat .main_cat_heating svg {
+		float: left;
+	} 
+
+	.main div.main_cat_supply_sys {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2 / 3;
+		background: url('../images/Main/Supply_sys_1.png') 50% 80% no-repeat #F8F8F8;
+	}
+
+	.main div.main_cat_tire:hover,
+	.main div.main_cat_supply_sys:hover,
+	.main div.main_cat_cooling_sys:hover,
+	.main div.main_cat_clutch:hover,
+	.main div.main_cat_transmission:hover,
+	.main div.main_cat_cardan:hover,
+	.main div.main_cat_bridge:hover,
+	.main div.main_cat_suspension:hover,
+	.main div.main_cat_wheel:hover,
+	.main div.main_cat_brake:hover,
+	.main div.main_cat_steering:hover,
+	.main div.main_cat_electro:hover,
+	.main div.main_cat_heating:hover {
+		-webkit-animation: MyAnimation2 1s;
+		        animation: MyAnimation2 1s;
+	}
+
+	.main div.main_cat_cooling_sys {
+			-ms-grid-row: 1;
+			-ms-grid-row-span: 1;
+			grid-row: 1 / 2;
+			-ms-grid-column: 3;
+			-ms-grid-column-span: 1;
+			grid-column: 3 / 4;
+			background: url('../images/Main/Cooling_sys_1.png') 50% 95% no-repeat #F8F8F8;
+	}
+
+	.main div.main_cat_clutch {
+			-ms-grid-row: 1;
+			-ms-grid-row-span: 1;
+			grid-row: 1 / 2;
+			-ms-grid-column: 4;
+			-ms-grid-column-span: 1;
+			grid-column: 4 / 5;
+			background: url('../images/Main/Clutch_1.png') 50% 80% no-repeat #F8F8F8;
+	}
+
+	.main div.main_cat_transmission {
+			-ms-grid-row: 2;
+			-ms-grid-row-span: 1;
+			grid-row: 2 / 3;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+			background: url('../images/Main/Transmission_1.png') 50% 80% no-repeat #F8F8F8;
+	}
+
+	.main div.main_cat_cardan {
+			-ms-grid-row: 2;
+			-ms-grid-row-span: 1;
+			grid-row: 2 / 3;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 1;
+			grid-column: 2 / 3;
+			background: url('../images/Main/Cardan_1.png') 50% 80% no-repeat #F8F8F8;
+	}
+
+	.main div.main_cat_bridge {
+			-ms-grid-row: 2;
+			-ms-grid-row-span: 1;
+			grid-row: 2 / 3;
+			-ms-grid-column: 3;
+			-ms-grid-column-span: 1;
+			grid-column: 3 / 4;
+			background: url('../images/Main/Bridge_1.png') 50% 95% no-repeat #F8F8F8;
+	}
+
+	.main div.main_cat_suspension {
+			-ms-grid-row: 2;
+			-ms-grid-row-span: 1;
+			grid-row: 2 / 3;
+			-ms-grid-column: 4;
+			-ms-grid-column-span: 1;
+			grid-column: 4 / 5;
+			background: url('../images/Main/Suspension_1.png') 50% 95% no-repeat #F8F8F8;
+	}
+
+	.main div.main_cat_wheel {
+			-ms-grid-row: 3;
+			-ms-grid-row-span: 1;
+			grid-row: 3 / 4;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+			background: url('../images/Main/Wheel_1.png') 50% 95% no-repeat #F8F8F8;
+	}
+
+	.main div.main_cat_brake {
+			-ms-grid-row: 3;
+			-ms-grid-row-span: 1;
+			grid-row: 3 / 4;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 1;
+			grid-column: 2 / 3;
+			background: url('../images/Main/Brake_1.png') 50% 95% no-repeat #F8F8F8;
+	}
+
+	.main div.main_cat_steering {
+			-ms-grid-row: 3;
+			-ms-grid-row-span: 1;
+			grid-row: 3 / 4;
+			-ms-grid-column: 3;
+			-ms-grid-column-span: 1;
+			grid-column: 3 / 4;
+			background: url('../images/Main/Steering_1.png') 50% 80% no-repeat #F8F8F8;
+	}
+
+	.main div.main_cat_electro {
+			-ms-grid-row: 3;
+			-ms-grid-row-span: 1;
+			grid-row: 3 / 4;
+			-ms-grid-column: 4;
+			-ms-grid-column-span: 1;
+			grid-column: 4 / 5;
+			background: url('../images/Main/Electro_1.png') 50% 80% no-repeat #F8F8F8;
+	}
+
+	.main div.main_cat_heating {
+			-ms-grid-row: 4;
+			-ms-grid-row-span: 1;
+			grid-row: 4 / 5;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+			background: url('../images/Main/Heating_1.png') 50% 87% no-repeat #F8F8F8;
+	}
+
+	.main div.main_cat_end {
+			-ms-grid-row: 4;
+			-ms-grid-row-span: 1;
+			grid-row: 4 / 5;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 3;
+			grid-column: 2 / 5;
+			background: url('../images/Main/Clutch_2.png') 95% 100% no-repeat #C83642;	
+	}
+
+	.main div.main_cat_end h1 {
+		padding: 50px 0 0 50px;
+		margin: 0;
+		font-size: 36px;
+		color: #FFFFFF;
+	}
+
+	.main .main_cat .main_cat_end a .main_cat_end_btm {
+	    border: transparent;   
+	    padding: 100px 50px 20px 50px;
+		background: url('../images/Main/Arrow_1.svg') 175px 80% no-repeat;
+	    margin: 0;
+	    font-size: 25px;
+	    color: #FFFFFF;
+	}
+
+	section.about_company {
+		margin: 125px 11% 115px;
+	}
+
+	section.about_company .about_company_info {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-rows: auto;
+		grid-template-rows: auto;
+		-ms-grid-columns: 1fr 70px 1fr;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 70px;
+	}
+
+	section.about_company .about_company_info .gallery_2 {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1 / 2;
+	}
+
+	.gallery_2 {
+	    width: auto;
+	    position: relative;
+	    -ms-flex-item-align: start;
+	        -ms-grid-row-align: start;
+	        align-self: start;
+	}
+
+	.gallery_2 .images_2 {
+	    height: 100%;
+	    width: 100%;
+	}
+
+	.gallery_2 .images_2 img{
+	    height: 100%;
+	    width: 100%;
+	}
+
+	.btm-slides {
+	    position: absolute;
+	    bottom: -40px;
+	    left: 140px;
+	    -webkit-transform: translateX(-50%);
+	        -ms-transform: translateX(-50%);
+	            transform: translateX(-50%);
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	}
+
+	.btm-slides span{
+	    height: 5px;
+	    width: 50px;
+	    margin: 0 3px;
+	    cursor: pointer;
+	}
+
+	.pokazatel-snimka{
+	    position: absolute;
+	    top: 50%;
+	    -webkit-transform: translateY(-50%);
+	        -ms-transform: translateY(-50%);
+	            transform: translateY(-50%);
+	    width: 45px;
+	    cursor: pointer;
+	    border: 2px solid white;
+	    background: rgba(255,255,255,0.1);
+	}
+
+	.pokazatel-snimka:hover{
+	    background: rgba(255,255,255,0.2);
+	}
+
+	.right{
+	    right: 0;
+		text-align: right;
+	}
+
+	.pokazatel-snimka span{
+	    line-height: 41px;
+	    font-size: 35px;
+		color: white;
+	}
+
+	section.about_company .about_company_info .about_company_text {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2 / 3;
+		overflow-y: hidden;
+	}
+
+	.about_company .about_company_info .about_company_text span {
+		text-transform: uppercase;
+	}
+
+	.about_company .about_company_info div h1 {
+		margin: 10px 0 60px;
+		font-size: 48px;
+	}
+
+	.about_company .about_company_info div p {
+		font-size: 24px;
+		line-height: 31px;
+	}
+
+	._anim-show {								
+		-webkit-transform: translate(0, 150%);
+		    -ms-transform: translate(0, 150%);
+		        transform: translate(0, 150%);					
+		opacity: 0;
+		-webkit-transition: all 1s ease 0s;
+		-o-transition: all 1s ease 0s;
+		transition: all 1s ease 0s;
+	}
+
+	._anim-show._active,				
+	._active ._anim-show {
+		opacity: 1;
+		-webkit-transform: translate(0, 0);
+		    -ms-transform: translate(0, 0);
+		        transform: translate(0, 0);
+	}
+
+	.about_company .about_company_info div a .about_company_btm {
+	    border: transparent;   
+	    padding: 0 50px 20px 0;
+		background: url('../images/Main/Arrow_2.svg') 125px 15% no-repeat;
+	    margin: 0;
+	    font-size: 20px;
+	    font-weight: bold;
+	}
+
+	section.news {
+		display: -ms-grid;
+		display: grid;
+		grid-auto-flow: row; 
+		-webkit-box-pack: justify; 
+		    -ms-flex-pack: justify; 
+		        justify-content: space-between;
+		grid-gap: 0 2.5%;
+		grid-template-rows: repeat(3, auto-fill);
+		-ms-grid-columns: 1fr 2.5% 1fr 2.5% 1fr;
+		grid-template-columns: repeat(3, 1fr);
+		background: url('../images/Main/Gear_wheel_2.png') no-repeat right top #F7F7F7;
+		padding-bottom: 100px;
+	}
+
+	section.news .news_gallery {
+		padding: 0 16% 0 11%;
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 3;
+		grid-column: 1 / 4;
+		-webkit-transform: translate(-100%, 0);
+		    -ms-transform: translate(-100%, 0);
+		        transform: translate(-100%, 0);			
+		-webkit-transition: all 4s ease 0s;
+		-o-transition: all 4s ease 0s;
+		transition: all 4s ease 0s;
+	}
+
+	.news .news_gallery img{
+		margin-right: 40px;
+		margin-bottom: 20px;
+		
+	}
+
+	.news .news_gallery._active {					
+		-webkit-transform: translate(0, 0);
+		    -ms-transform: translate(0, 0);
+		        transform: translate(0, 0);
+	}
+
+	section.news .news_text {
+		-ms-grid-row: 2;
+		-ms-grid-row-span: 1;
+		grid-row: 2 / 3;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 3;
+		grid-column: 1 / 4;
+		margin: 0 11%;
+	}
+
+	section.news .news_text h1 {
+		font-size: 48px;
+	}
+
+	section.news .news_elem_1 {
+		-ms-grid-row: 3;
+		-ms-grid-row-span: 1;
+		grid-row: 3 / 4;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1 / 2;
+		margin-left: 36%;
+		max-width: 100%;
+	}
+
+	.news .news_elem_1 img,
+	.news .news_elem_2 img,						
+	.news .news_elem_3 img {
+		display: block;
+		max-width: 100%;
+		margin: 20px auto;
+		min-height: 222px;
+		-webkit-transform: scale(0);
+		    -ms-transform: scale(0);
+		        transform: scale(0);
+		-webkit-transition: all 0.8s ease 0s;
+		-o-transition: all 0.8s ease 0s;
+		transition: all 0.8s ease 0s;
+	}
+
+	.news_elem_1._active img,
+	.news_elem_2._active img,
+	.news_elem_3._active img {		
+		-webkit-transform: scale(1);
+		    -ms-transform: scale(1);
+		        transform: scale(1);
+	}										
+
+
+	section.news .news_elem_2 {
+		-ms-grid-row: 3;
+		-ms-grid-row-span: 1;
+		grid-row: 3 / 4;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2 / 3;
+		max-width: 100%;
+	}
+
+	.news .news_elem_2 h2,
+	.news .news_elem_2 .news_date_link_2 {
+		padding: 0 10%;
+	}
+
+	.news .news_elem_1 h2,
+	.news .news_elem_2 h2,
+	.news .news_elem_3 h2 { 			
+		-webkit-transform: translate(0, 50%);
+		    -ms-transform: translate(0, 50%);
+		        transform: translate(0, 50%);     
+		opacity: 0;
+		-webkit-transition: all 0.3s ease 0s;
+		-o-transition: all 0.3s ease 0s;
+		transition: all 0.3s ease 0s;
+	}
+
+	.news_elem_1._active h2,
+	.news_elem_2._active h2,
+	.news_elem_3._active h2 {				
+		-webkit-transform: translate(0, 0);
+		    -ms-transform: translate(0, 0);
+		        transform: translate(0, 0);		
+		opacity: 1;
+		-webkit-transition: all 0.8s ease 0.6s;
+		-o-transition: all 0.8s ease 0.6s;
+		transition: all 0.8s ease 0.6s;
+	}	
+
+	section.news .news_elem_3 {
+		-ms-grid-row: 3;
+		-ms-grid-row-span: 1;
+		grid-row: 3 / 4;
+		-ms-grid-column: 3;
+		-ms-grid-column-span: 1;
+		grid-column: 3 / 4;
+		margin-right: 36%;
+		max-width: 100%;
+	}
+
+	.news .news_elem_1 .news_date_link_1,
+	.news .news_elem_2 .news_date_link_2,
+	.news .news_elem_3 .news_date_link_3 {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+	}
+
+	.news .news_elem_1 a .news_btm, 
+	.news .news_elem_2 a .news_btm,
+	.news .news_elem_3 a .news_btm {
+	    border: transparent;   
+	    padding-right: 50px;
+		background: url('../images/Main/Arrow_2.svg') 125px 50% no-repeat;
+	    margin: 0;
+	    font-size: 20px;
+	    font-weight: bold;
+	}
+
+	.news .all_news {
+		display: none;
+	}
+
+	section.advantages {
+		margin: 115px 11% 100px 11%;
+	}
+
+	.advantages h1 {
+		color: #C83642;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 32px;
+		margin-bottom: 50px;
+	}
+
+	section.advantages .advantages_cards {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-rows: auto;
+		grid-template-rows: auto;
+		-ms-grid-columns: 1fr 45px 1fr 45px 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		grid-gap: 0 45px;
+		margin-bottom: 80px;
+	}
+
+	._anim-show2 {							
+		-webkit-transform: translateZ(-800px) rotateX(180deg);
+		        transform: translateZ(-800px) rotateX(180deg);	
+		-webkit-transition: all 1.5s ease 0s;	
+		-o-transition: all 1.5s ease 0s;	
+		transition: all 1.5s ease 0s;				
+		opacity: 0;
+	}
+
+	._anim-show2._active,				
+	._active ._anim-show2 {
+		-webkit-transform: translateX(0) rotate(0deg);
+		    -ms-transform: translateX(0) rotate(0deg);
+		        transform: translateX(0) rotate(0deg);	
+		opacity: 1;
+	}
+
+	.advantages .advantages_cards .advantages_card_1 {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1 / 2;
+		font-size: 20px;
+		background-color: #F8F8F8;
+		border-radius: 10px;
+		padding: 54px 37px 6px 44px;
+		margin-top: 0;
+		line-height: 26px;
+	}
+
+	.advantages_cards .advantages_card_1 span {
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	.advantages .advantages_cards .advantages_card_2 {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2 / 3;
+		font-size: 20px;
+		border: 9px solid #F2F2F2;
+		border-radius: 10px;
+		padding: 15px 49px 65px 71px;
+	}
+
+	.advantages_cards .advantages_card_2 h2:last-of-type {
+		font-size: 24px;
+	}
+
+	.advantages .advantages_cards .advantages_card_3 {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 3;
+		-ms-grid-column-span: 1;
+		grid-column: 3 / 4;
+		font-size: 20px;
+		background: url('../images/Main/Tirsan_logo.png') 20% 16% no-repeat, url('../images/Main/Tirsan_bg.png') no-repeat;
+		border-radius: 10px;
+		padding: 150px 5px 50px 50px;
+		color: #FFFFFF;
+	}
+
+	.advantages_cards .advantages_card_3 span {
+		text-transform: uppercase;
+	}
+
+	section.advantages .advantages_points {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-rows: auto;
+		grid-template-rows: auto;
+		-ms-grid-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+	}
+
+	._anim-show3 {								
+		-webkit-transform: translate(0, 150%);
+		    -ms-transform: translate(0, 150%);
+		        transform: translate(0, 150%);					
+		opacity: 0;
+		-webkit-transition: all 1s ease 0.5s;
+		-o-transition: all 1s ease 0.5s;
+		transition: all 1s ease 0.5s;
+	}
+
+	._anim-show3._active,				
+	._active ._anim-show3 {
+		-webkit-transform: translateX(0) rotate(0deg);
+		    -ms-transform: translateX(0) rotate(0deg);
+		        transform: translateX(0) rotate(0deg);	
+		opacity: 1;
+	}
+
+	.advantages .advantages_points .advantages_point_1 {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1 / 2;
+	}
+
+	.advantages .advantages_points .advantages_point_2 {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2 / 3;
+	}
+
+	.advantages .advantages_points .advantages_point_3 {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 3;
+		-ms-grid-column-span: 1;
+		grid-column: 3 / 4;
+	}
+
+	.advantages .advantages_points .advantages_point_3 {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 4;
+		-ms-grid-column-span: 1;
+		grid-column: 4 / 5;
+	}
+
+	.advantages .advantages_points img {
+		float: left;
+	}
+
+	.advantages .advantages_points h2 {
+		margin-top: 0;
+	}
+
+	.advantages .advantages_points .advantages_point_1 div,
+	.advantages .advantages_points .advantages_point_2 div,
+	.advantages .advantages_points .advantages_point_3 div,
+	.advantages .advantages_points .advantages_point_4 div {
+		padding-left: 80px;
+	}
+
+	@media only all and (max-width: 1440px) {
+		.main {
+			margin: 0 20px;
+		}
+
+		section.about_company {
+			margin: 125px 20px 115px;;
+		}	
+
+		section.news .news_gallery {
+			padding: 0 100px 0 20px;
+		}
+
+		section.news .news_text {
+			margin: 0 20px;
+		}
+
+		section.news .news_elem_1 {
+			margin-left: 20px;
+		}
+
+		section.news .news_elem_3 {
+			margin-right: 20px;
+		}
+
+		section.advantages {
+			margin: 115px 20px 100px 20px;
+		}
+	}
+
+	@media only all and (max-width: 1024px) {
+		.main {
+			margin: 0 10px;
+		}
+
+		.main div.main_cat {
+			grid-gap: 20px 10px;
+		}
+
+		.main div.main_banner {
+			min-height: 400px;
+		}
+
+		.text_slider {
+			height: 400px;
+		}
+
+		.main_banner .text_slider .block_text div div {
+			padding-left: 80px;
+			margin-top: 40px;
+			padding-top: 40px;
+		}
+
+		.main .main_banner .text_slider .block_text .extra h1 {
+			font-size: 46px;
+		}
+
+		.main .main_banner .text_slider .block_text .extra h2 {
+			font-size: 24px;
+			margin-top: 0;
+			line-height: 40px;
+		} 
+
+		.main .main_banner .text_slider .block_text .extra.black div {
+			padding-top: 20px;
+		}
+	
+		.main .main_banner .text_slider .block_text .extra.black h2 {
+			margin-top: 155px;
+		} 
+
+		.btm-slides_1 {
+			left: 220px;
+			bottom: 20px;
+		}
+
+		.main div.main_cat_tire p {
+			padding-left: 20px;	
+			padding-bottom: 40px;
+		}
+
+		.main .main_cat .main_cat_tire a .main_cat_tire_btm {  
+		    padding-left: 20px;
+		}
+
+		.main div.main_cat_supply_sys,
+		.main div.main_cat_cooling_sys,
+		.main div.main_cat_clutch,
+		.main div.main_cat_transmission,
+		.main div.main_cat_cardan,
+		.main div.main_cat_bridge,
+		.main div.main_cat_suspension,
+		.main div.main_cat_wheel,
+		.main div.main_cat_brake,
+		.main div.main_cat_steering,
+		.main div.main_cat_electro,
+		.main div.main_cat_heating,
+		.main div.main_cat_end {
+			background-size: 70%;
+		}
+
+		.main div.main_cat_tire h1,
+		.main div.main_cat_supply_sys h1,
+		.main div.main_cat_cooling_sys h1,
+		.main div.main_cat_clutch h1,
+		.main div.main_cat_transmission h1,
+		.main div.main_cat_cardan h1,
+		.main div.main_cat_bridge h1,
+		.main div.main_cat_suspension h1,
+		.main div.main_cat_wheel h1,
+		.main div.main_cat_brake h1,
+		.main div.main_cat_steering h1,
+		.main div.main_cat_electro h1,
+		.main div.main_cat_heating h1 {
+			padding: 35px 0 20px 20px;
+			margin: 0;
+			font-size: 22px;
+		}
+
+		section.about_company {
+			margin: 65px 10px 65px;
+		}	
+
+		section.about_company .about_company_info {
+			grid-gap: 30px;
+		}
+
+		.about_company .about_company_info div h1 {
+			margin: 10px 0 20px;
+			font-size: 36px;
+		}
+
+		.about_company .about_company_info div p {
+			font-size: 20px;
+			line-height: 24px;
+		}
+
+		section.news {
+			-ms-grid-columns: 1fr 2.5% 1fr;
+			grid-template-columns: repeat(2, 1fr);
+			padding-bottom: 50px;
+		}
+
+		section.news .news_gallery {
+			padding: 0 10px;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 2;
+			grid-column: 1 / 3;
+		}
+
+		section.news .news_gallery img:last-of-type {
+			display: none;
+		}
+
+		section.news .news_text h1 {
+			font-size: 36px;
+		}
+
+		section.news .news_text {
+			margin: 0 10px;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 2;
+			grid-column: 1 / 3;
+		}
+
+		section.news .news_elem_1 {
+			margin-left: 10px;
+		}
+
+		section.news .news_elem_3 {
+			display: none;
+		}
+
+		.news .news_elem_1 h2,
+		.news .news_elem_2 h2 {
+			font-size: 20px;
+		}
+
+		section.advantages {
+			margin: 65px 10px 50px;
+		}
+
+		section.advantages .advantages_cards {
+			-ms-grid-rows: auto 10px auto;
+			grid-template-rows: auto auto;
+			-ms-grid-columns: 1fr 10px 1fr;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 10px;
+		}
+
+		.advantages .advantages_cards .advantages_card_1 {
+			font-size: 18px;
+			padding: 30px 20px 6px 20px;
+			line-height: 26px;
+		}
+
+		.advantages .advantages_cards .advantages_card_2 {
+			font-size: 18px;
+			padding: 15px 20px 6px 20px;
+			}
+
+		.advantages .advantages_cards .advantages_card_3 {
+			-ms-grid-row: 2;
+			-ms-grid-row-span: 1;
+			grid-row: 2 / 3;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+			font-size: 18px;
+			padding: 120px 5px 50px 50px;
+		}
+
+		section.advantages .advantages_points {
+			-ms-grid-rows: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			-ms-grid-columns: 1fr 1fr;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.advantages .advantages_points .advantages_point_3 {
+			-ms-grid-row: 2;
+			-ms-grid-row-span: 1;
+			grid-row: 2 / 3;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+		}
+
+		.advantages .advantages_points .advantages_point_4 {
+			-ms-grid-row: 2;
+			-ms-grid-row-span: 1;
+			grid-row: 2 / 3;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 1;
+			grid-column: 2 / 3;
+		}
+	}
+
+	@media only all and (max-width: 640px) {
+		.main {
+			margin: 0 10px;
+		}
+
+		.main div.main_banner {
+			min-height: 200px;
+			margin-top: 30px;
+			-webkit-animation: none;
+					animation: none;
+		}
+
+		.text_slider {
+			height: 200px;
+		}
+
+		.main .main_banner .text_slider .block_text .extra h1 {
+			font-size: 24px;
+		}
+
+		.main .main_banner .text_slider .block_text .extra h2 {
+			font-size: 16px;
+			margin: 0 0 10px;
+			padding-top: 10px;
+			line-height: 1.6;
+		} 
+
+		.main .main_banner .text_slider .block_text .extra.black div {
+			padding-top: 20px;
+		}
+	
+		.main .main_banner .text_slider .block_text .extra.black h2 {
+			margin-top: 100px;
+		} 
+
+		.main_banner .text_slider .block_text div div {			
+			padding-left: 50px;
+			margin-top: 10px;
+			padding-top: 10px;
+			margin-bottom: 70px;
+		}
+
+		.btm-slides_1 {
+		    bottom: -30px;
+		    left: 140px;
+		}
+
+		.main .main_banner .text_slider .block_text .extra .banner_btm {
+			font-size: 14px;
+			width: 140px;
+		    padding: 10px 20px 10px 0;
+			background: url('../images/Main/Arrow_1.svg') 115px 50% no-repeat #C82132;
+		}
+
+		.main_banner + h1 {
+			font-size: 32px;
+		}
+
+		.main div.main_cat {
+			-ms-grid-rows: minmax(225px, auto) 20px minmax(225px, auto) 20px minmax(225px, auto) 20px minmax(225px, auto) 20px minmax(225px, auto) 20px minmax(225px, auto) 20px minmax(225px, auto);
+			grid-template-rows: repeat(7, minmax(225px, auto));
+			-ms-grid-columns: 1fr 0 1fr;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 20px 0;
+		}
+
+		.main .main_cat .main_cat_tire a .main_cat_tire_btm {
+		    padding: 0 50px 20px 20px;
+			background: url('../images/Main/Arrow_2.svg') 105px 13% no-repeat;
+		    font-size: 18px;
+		}
+		
+		.main div.main_cat_cooling_sys {
+			-ms-grid-row: 2;
+			-ms-grid-row-span: 1;
+			grid-row: 2 / 3;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+		}
+
+		.main div.main_cat_clutch {
+			-ms-grid-row: 2;
+			-ms-grid-row-span: 1;
+			grid-row: 2 / 3;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 1;
+			grid-column: 2 / 3;
+		}
+
+		.main div.main_cat_transmission {
+			-ms-grid-row: 3;
+			-ms-grid-row-span: 1;
+			grid-row: 3 / 4;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+		}
+
+		.main div.main_cat_cardan {
+			-ms-grid-row: 3;
+			-ms-grid-row-span: 1;
+			grid-row: 3 / 4;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 1;
+			grid-column: 2 / 3;
+		}
+
+		.main div.main_cat_bridge {
+			-ms-grid-row: 4;
+			-ms-grid-row-span: 1;
+			grid-row: 4 / 5;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+		}
+
+		.main div.main_cat_suspension {
+			-ms-grid-row: 4;
+			-ms-grid-row-span: 1;
+			grid-row: 4 / 5;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 1;
+			grid-column: 2 / 3;
+		}
+
+		.main div.main_cat_wheel {
+			-ms-grid-row: 5;
+			-ms-grid-row-span: 1;
+			grid-row: 5 / 6;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+		}
+
+		.main div.main_cat_brake {
+			-ms-grid-row: 5;
+			-ms-grid-row-span: 1;
+			grid-row: 5 / 6;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 1;
+			grid-column: 2 / 3;
+		}
+
+		.main div.main_cat_steering {
+			-ms-grid-row: 6;
+			-ms-grid-row-span: 1;
+			grid-row: 6 / 7;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+		}
+
+		.main div.main_cat_electro {
+			-ms-grid-row: 6;
+			-ms-grid-row-span: 1;
+			grid-row: 6 / 7;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 1;
+			grid-column: 2 / 3;
+		}
+
+		.main div.main_cat_heating {
+			-ms-grid-row: 7;
+			-ms-grid-row-span: 1;
+			grid-row: 7 / 8;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+		}
+
+		.main div.main_cat_end {
+			-ms-grid-row: 7;
+			-ms-grid-row-span: 1;
+			grid-row: 7 / 8;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 1;
+			grid-column: 2 / 3;
+		}
+
+		.main div.main_cat_tire h1,
+		.main div.main_cat_supply_sys h1,
+		.main div.main_cat_cooling_sys h1,
+		.main div.main_cat_clutch h1,
+		.main div.main_cat_transmission h1,
+		.main div.main_cat_cardan h1,
+		.main div.main_cat_bridge h1,
+		.main div.main_cat_suspension h1,
+		.main div.main_cat_wheel h1,
+		.main div.main_cat_brake h1,
+		.main div.main_cat_steering h1,
+		.main div.main_cat_electro h1,
+		.main div.main_cat_heating h1 {
+			font-size: 20px;
+		}
+
+		.main div.main_cat_end h1 {
+			padding: 50px 0 0 30px;
+			font-size: 24px;
+		}
+
+		.main .main_cat .main_cat_end a .main_cat_end_btm {
+		    padding-top: 50px;
+			background-position: 115px 70%;
+		    font-size: 20px;
+		    padding-left: 30px;
+		}
+
+		section.about_company .about_company_info {
+			-ms-grid-rows: auto 30px auto;
+			grid-template-rows: auto auto;
+			-ms-grid-columns: auto;
+			grid-template-columns: auto;
+			margin: 0 20px;
+		}
+
+		section.about_company .about_company_info .about_company_text {
+			margin-top: 50px;
+			-ms-grid-row: 2;
+			-ms-grid-row-span: 1;
+			grid-row: 2 / 3;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+		}
+
+		section.news {
+			background-image: none;
+			grid-template-rows: repeat(4, auto-fill);
+		}
+
+		.news .news_gallery {
+			-ms-grid-column-align: center;
+			    justify-self: center;
+		}
+
+		.news .news_gallery img:nth-child(3),
+		.news .news_gallery img:nth-child(4),
+		.news .news_gallery img:nth-child(5) {
+			display: none;
+		}
+
+		section.news .news_text {
+			margin: 0 20px;
+		}
+
+		section.news .news_elem_1 {
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 2;
+			grid-column: 1 / 3;
+			margin: 0 20px;
+		}
+
+		section.news .news_elem_2 {
+			display: none;
+		}
+
+		section.news .all_news {
+			display: block;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 2;
+			grid-column: 1 / 3;
+			-ms-grid-row: 4;
+			-ms-grid-row-span: 1;
+			grid-row: 4 / 5;
+			-ms-grid-column-align: center;
+			    justify-self: center;
+		}
+
+		section.news .all_news .all_news_btm {
+			width: 250px;
+		    font-size: 18px; 
+		    border: solid red;   
+		    outline: none;
+		    padding: 20px 50px 20px 60px;
+			background: url('../images/Main/Arrow_2.svg') 200px 50% no-repeat;
+		    margin-top: 50px;
+			text-transform: uppercase;
+			border-radius: 5px;
+		}
+
+		section.advantages {
+			margin: 65px 20px 50px;
+		}
+
+		section.news .all_news .all_news_btm:hover {
+			color: red;
+			cursor: pointer;
+		}
+
+		section.advantages .advantages_cards {
+			-ms-grid-rows: auto 10px auto 10px auto;
+			grid-template-rows: repeat(3, auto);
+			-ms-grid-columns: auto;
+			grid-template-columns: auto;
+		}
+
+		.advantages .advantages_cards .advantages_card_1 {
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1/2;
+			font-size: 16px;
+			padding: 40px 30px 0 30px;
+			line-height: 26px;
+		}
+
+		.advantages .advantages_cards .advantages_card_2 {
+			-ms-grid-row: 2;
+			-ms-grid-row-span: 1;
+			grid-row: 2 / 3;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+			font-size: 16px;
+			padding: 30px 20px 0 20px;
+			}
+
+		.advantages .advantages_cards .advantages_card_3 {
+			-ms-grid-row: 3;
+			-ms-grid-row-span: 1;
+			grid-row: 3 / 4;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+			font-size: 16px;
+			padding: 120px 50px 20px 50px;
+			background-size: auto, cover;
+		}
+
+		section.advantages .advantages_points {
+			-ms-grid-rows: auto 30px auto 30px auto 30px auto;
+			grid-template-rows: repeat(4, auto);
+			-ms-grid-columns: auto;
+			grid-template-columns: auto;
+			grid-gap: 30px;
+		}
+
+
+		.advantages .advantages_points .advantages_point_2 {
+			-ms-grid-row: 2;
+			-ms-grid-row-span: 1;
+			grid-row: 2 / 3;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+		}
+
+		.advantages .advantages_points .advantages_point_3 {
+			-ms-grid-row: 3;
+			-ms-grid-row-span: 1;
+			grid-row: 3 / 4;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+		}
+
+		.advantages .advantages_points .advantages_point_4 {
+			-ms-grid-row: 4;
+			-ms-grid-row-span: 1;
+			grid-row: 4 / 5;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+		}
+	}

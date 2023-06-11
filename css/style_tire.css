@@ -1,0 +1,991 @@
+@import url("FuturaPT-Medium/style.css");
+@import "style_header_footer.css";
+@-webkit-keyframes spin {						
+	from { -webkit-transform: rotate(0deg); }
+	to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {							
+	from {-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+	to {-webkit-transform:rotate(360deg);transform:rotate(360deg);}
+}
+
+body {
+		margin: 0; 
+		font-family: 'Futura PT', sans-serif;;
+		font-size: 16px;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
+		-webkit-text-size-adjust: none;
+	}
+
+	.menu .catalog .dropbtn {
+		color: blue;
+		text-shadow: 5px 5px 5px gray;
+	}
+
+	ul.breadcrumb {
+		margin: 0 11%;
+		padding: 10px 16px;
+		list-style: none;
+		border-bottom: solid 1px #E5E5E5;
+	}
+
+	ul.breadcrumb li {
+		display: inline;
+		font-size: 18px;
+	}
+
+	ul.breadcrumb li+li:before {
+		padding: 8px;
+		color: black;
+		content: "/\00a0";
+	}
+
+	ul.breadcrumb li a {
+		color: #0275d8;
+		text-decoration: none;
+	}
+
+	ul.breadcrumb li a:hover {
+		color: #01447e;
+		text-decoration: underline;
+	}
+
+	.main_tire > h1 {
+		font-size: 48px;
+		margin-left: 30px;
+		text-transform: uppercase;
+		margin: 20px 11%;
+	}
+
+	.main_tire .info_coments {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		color: black;
+		margin: 0 11%;
+	}
+
+	.main_tire .info_coments {
+		background: url('../images/Catalog/Rating.png') 35px top no-repeat;
+	}
+
+	.main_tire .info_coments p {
+		padding-left: 110px;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.main_tire .main_tire_info_container {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-rows: auto;
+		grid-template-rows: auto;
+		-ms-grid-columns: 1.2fr 25px 1fr 25px 1fr;
+		grid-template-columns: 1.2fr 1fr 1fr;
+		margin: 50px 11% 25px;
+		grid-gap: 0 25px;
+	}
+
+	.main_tire .main_tire_info_container img {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1 / 2;
+		width: 100%;
+		border: 1px #E5E5E5 solid;
+		height: 100%;
+	}
+
+	.main_tire_info_container .tire_short_description {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2 / 3;
+		margin-right: 10%;
+	}
+
+	.tire_short_description .short_description,
+	.tire_description .description {
+		list-style-type: none;
+		-webkit-padding-start: 0;
+		        padding-inline-start: 0;
+		font-size: 16px;
+	}
+
+	.tire_short_description .short_description li {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+	}
+
+    .tire_short_description .short_description li span:first-of-type,
+	.tire_description .description li span:first-of-type {
+		display: inline-block;
+		color: #6A6A6A;
+	}
+
+	.tire_short_description .short_description li span:last-of-type,
+	.tire_description .description li span:last-of-type {
+		display: inline-block;
+		text-align: right;
+	}
+
+	.main_tire_info_container .item_card {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 3;
+		-ms-grid-column-span: 1;
+		grid-column: 3 / 4;
+		padding: 20px 32px 24px;
+		background-color: #FFFFFF;
+		-webkit-box-shadow: 0px 2px 4px rgba(172, 85, 0, 0.08), 0px 8px 32px rgba(255, 126, 0, 0.16);
+		        box-shadow: 0px 2px 4px rgba(172, 85, 0, 0.08), 0px 8px 32px rgba(255, 126, 0, 0.16);
+	}
+
+	.main_tire_info_container .item_card h1 {
+		font-size: 48px;
+		margin-top: 0;
+	}
+
+	.main_tire_info_container .item_card .button_price {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	.button_price input[type=number] {
+		width: 40px;
+	}
+
+	button.exclusive {
+		background-color: rgb(221, 221, 221);
+		background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 154, 208)), to(rgb(0, 122, 183)));
+		background-image: -o-linear-gradient(rgb(0, 154, 208), rgb(0, 122, 183));
+		background-image: linear-gradient(rgb(0, 154, 208), rgb(0, 122, 183));
+		border: 1px solid rgb(1, 39, 64);
+		border-radius: 5px;
+		color: #FFF;
+		cursor: pointer;
+		display: block;
+		font-size: 16px;
+		width: 70%;
+		height: 40px;
+		line-height: 18px;
+		text-align: center;
+		text-shadow: 0 1px #015883;
+		padding: 0 .2em;	
+		margin-right: 16px;
+	}
+	
+	button.exclusive:before {
+		font-family: "FontAwesome";
+		color: white;
+		font-size: 20px;
+		text-shadow: 0 1px #015883;
+		content: "\f07a";
+		z-index: 2;
+		width: 25px;
+		text-align: center;
+		border: none;
+		border-radius: 0;
+		display: inline-block;
+	}
+	
+	button.exclusive:hover {
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#007ab7), to(#009ad0));
+		background-image: -o-linear-gradient(#007ab7, #009ad0);
+		background-image: linear-gradient(#007ab7, #009ad0);
+	}
+	
+	button.exclusive.disabled:before {
+		content: "\f110";
+		animation: 2s linear 0s normal none infinite spin;
+		-webkit-animation: 2s linear 0s normal none infinite spin;
+		-moz-animation: 2s linear 0s normal none infinite spin;
+	}
+	
+	button.exclusive.added:before {
+		content: "\f00c";
+	}
+
+	.like {
+		display: inline-block;
+		font-size: 25px;
+		cursor: pointer;
+		border-radius: 5px;
+		height: 38px;
+		width: 20%;
+		border: solid 1px rgb(1, 39, 64);
+		text-align: center;
+	}
+	  
+	.like__input {
+		display: none;
+	}
+	  
+	.like__heart:before {
+		content: '\f08a';
+		font-family: fontAwesome;
+		color:rgb(221, 221, 221);
+	}
+	  
+	:checked+.like__heart:before {
+		content: '\f004';
+		color: red;
+	}
+
+	.main_tire_info_container .item_card .tire_guarantee {
+		padding-left: 10%;
+		background: url('../images/Tire/Guarantee.svg') left center no-repeat;
+	}
+
+	.main_tire_info_container .item_card .tire_delivery {
+		padding-left: 10%;
+		background: url('../images/Tire/Delivery.svg') left 12% no-repeat;
+	}
+
+	.main_tire_info_container .item_card .tire_payment {
+		padding-left: 10%;
+		background: url('../images/Tire/Payment.svg') left 12% no-repeat;
+	}
+
+	.tire_tabs {
+		margin: 0 11%;
+	}
+
+    .tire_tabs > input[type="radio"] {
+		display: none;
+    }
+
+    .tire_tabs > div {
+		display: none;
+    }
+
+    #tab-btn-1:checked~#content-1,
+    #tab-btn-2:checked~#content-2,
+    #tab-btn-3:checked~#content-3,
+	#tab-btn-4:checked~#content-4 {
+		display: block;
+    }
+
+    .tire_tabs > label {
+		display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+		-webkit-user-select: none;
+		   -moz-user-select: none;
+		    -ms-user-select: none;
+		        user-select: none;
+		background-color: #f5f5f5;
+		padding: 2px 8px;
+		font-size: 18px;
+		line-height: 1.5;
+		-webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+		-o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+		transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+		cursor: pointer;
+		position: relative;
+		top: 1px;
+		color: #4C65BD;
+		padding-right: 2%;
+    }
+
+    .tire_tabs > label:not(:first-of-type) {
+    	border-left: none;
+    }
+
+    .tire_tabs > input[type="radio"]:checked+label {
+		background-color: #fff;
+		color: #FF7E00;
+		border-bottom: 1px solid;
+		color: #FF7E00;
+    }
+
+	.tire_tabs #content-1 .content-1_container {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-columns: 1fr 25px 1fr;
+		grid-template-columns: 1fr 1fr;
+		-ms-grid-rows: auto 0 auto 0 auto;
+		grid-template-rows: repeat(3, auto);
+		grid-gap: 0 25px;
+	}
+
+	.tire_tabs #content-1 .content-1_container p:first-of-type {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1 / 2;
+		margin: 0;
+		color: #6A6A6A;
+	}
+
+	.tire_tabs #content-1 .content-1_container p:nth-of-type(2) {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2 / 3;
+		margin: 0;
+		color: #6A6A6A;
+	}
+
+	.tire_tabs #content-1 .content-1_container h2 {
+		-ms-grid-row: 2;
+		-ms-grid-row-span: 1;
+		grid-row: 2 / 3;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
+		grid-column: 1 / 3;
+	}
+
+	.tire_tabs #content-1 .content-1_container p:nth-of-type(3) {
+		-ms-grid-row: 3;
+		-ms-grid-row-span: 1;
+		grid-row: 3 / 4;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1 / 2;
+		margin: 0;
+		color: #6A6A6A;
+	}
+
+	.tire_tabs #content-1 .content-1_container p:last-of-type {
+		-ms-grid-row: 3;
+		-ms-grid-row-span: 1;
+		grid-row: 3 / 4;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2 / 3;
+		margin: 0;
+		color: #6A6A6A;
+	}
+
+	.tire_description .description li {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		width: 50%;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+	}
+
+	.tire_tabs #content-3 .content-3_container {
+		display: -ms-grid;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(4, auto);
+	}
+
+	.tire_tabs #content-3 .content-3_container h2:first-of-type {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
+		grid-column: 1 / 3;
+		margin-right: 25px;
+	}
+
+	.tire_tabs #content-3 .content-3_container p:first-of-type {
+		-ms-grid-row: 2;
+		-ms-grid-row-span: 1;
+		grid-row: 2 / 3;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
+		grid-column: 1 / 3;
+		margin: 0;
+		color: #6A6A6A;
+		margin-right: 25px;
+	}
+
+	.tire_tabs #content-3 .content-3_container h2:nth-of-type(2) {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 3;
+		-ms-grid-column-span: 2;
+		grid-column: 3 / 5;
+	}
+
+	.tire_tabs #content-3 .content-3_container p:nth-of-type(2) {
+		-ms-grid-row: 2;
+		-ms-grid-row-span: 1;
+		grid-row: 2 / 3;
+		-ms-grid-column: 3;
+		-ms-grid-column-span: 2;
+		grid-column: 3 / 5;
+		margin: 0;
+		color: #6A6A6A;
+	}
+
+	.tire_tabs #content-3 .content-3_container h2:last-of-type {
+		-ms-grid-row: 3;
+		-ms-grid-row-span: 1;
+		grid-row: 3 / 4;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 4;
+		grid-column: 1 / 5;
+	}
+
+	.tire_tabs #content-3 .content-3_container .garantee_point_1 {
+		-ms-grid-row: 4;
+		-ms-grid-row-span: 1;
+		grid-row: 4 / 5;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1 / 2;
+		color: #6A6A6A;
+		background: url('../images/Tire/number1.png') left center no-repeat;
+		padding-left: 21%;
+		min-height: 50px;
+		margin-right: 25px;
+	}
+
+	.tire_tabs #content-3 .content-3_container .garantee_point_2 {
+		-ms-grid-row: 4;
+		-ms-grid-row-span: 1;
+		grid-row: 4 / 5;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2 / 3;
+		color: #6A6A6A;
+		margin-right: 25px;
+		background: url('../images/Tire/number2.png') left center no-repeat;
+		padding-left: 21%;
+		min-height: 50px;
+	}
+
+	.tire_tabs #content-3 .content-3_container .garantee_point_3 {
+		-ms-grid-row: 4;
+		-ms-grid-row-span: 1;
+		grid-row: 4 / 5;
+		-ms-grid-column: 3;
+		-ms-grid-column-span: 1;
+		grid-column: 3 / 4;
+		color: #6A6A6A;
+		margin-right: 25px;
+		background: url('../images/Tire/number3.png') left center no-repeat;
+		padding-left: 21%;
+		min-height: 50px;
+	}
+
+	.tire_tabs #content-3 .content-3_container .garantee_point_4 {
+		-ms-grid-row: 4;
+		-ms-grid-row-span: 1;
+		grid-row: 4 / 5;
+		-ms-grid-column: 4;
+		-ms-grid-column-span: 1;
+		grid-column: 4 / 5;
+		color: #6A6A6A;
+		background: url('../images/Tire/number4.png') left center no-repeat;
+		padding-left: 21%;
+		min-height: 50px;
+	}
+
+	.tire_tabs button.btn_review {
+		background-color: #FF7E00;
+		border: 1px solid rgb(1, 39, 64);
+		border-radius: 5px;
+		color: #FFF;
+		cursor: pointer;
+		display: block;
+		font-size: 16px;
+		width: 200px;
+		height: 40px;
+		text-align: center;
+		padding: 0 .2em;	
+		margin: 40px auto;
+	}
+
+	.tire_tabs a {
+		text-decoration: none;
+	}
+
+	.tire_tabs .review_1 p {
+		color: #6A6A6A;
+	}
+
+	.main_tire > h2 {
+		font-size: 32px;
+		text-align: center;
+		margin: 50px 0 30px;
+	}
+
+	.similar_tires_items {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-rows: auto;
+		grid-template-rows: auto;
+		-ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 20px 20px;
+		margin: 0 11% 30px;
+	}
+
+	.similar_tires_items .similar_tire_items_1 {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1 / 2;
+		-ms-grid-row-align: center;
+		    align-self: center;
+		padding: 0 30px;
+		border: solid 1px #E5E5E5;
+		background: url('../images/catalog/Pirelli Winter Ice Zero Friction.png') center top no-repeat;
+		height: 100%;
+	}
+
+	.similar_tires_items .similar_tire_items_2 {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2 / 3;
+		-ms-grid-row-align: center;
+		    align-self: center;
+		padding: 0 30px;
+		border: solid 1px #E5E5E5;
+		background: url('../images/catalog/Cordiant Winter Drive 2 SUV.png') center top no-repeat;
+		height: 100%;
+	}
+
+	.similar_tires_items .similar_tire_items_3 {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 3;
+		-ms-grid-column-span: 1;
+		grid-column: 3 / 4;
+		-ms-grid-row-align: center;
+		    align-self: center;
+		padding: 0 30px;
+		border: solid 1px #E5E5E5;
+		background: url('../images/catalog/Goodyear Eagle Sport TZ.png') center top no-repeat;
+		height: 100%;
+	}
+
+	.similar_tires_items .similar_tire_items_4 {
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / 2;
+		-ms-grid-column: 4;
+		-ms-grid-column-span: 1;
+		grid-column: 4 / 5;
+		-ms-grid-row-align: center;
+		    align-self: center;
+		padding: 0 30px;
+		border: solid 1px #E5E5E5;
+		background: url('../images/catalog/Hankook Winter icept X RW10.png') center top no-repeat;
+		height: 100%;
+	}
+
+	.similar_tires_items a {
+		text-decoration: none;
+		display: block;
+	}
+
+	.similar_tires_items a .rating_coments {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		color: black;
+	}
+
+	.similar_tires_items .rating_coments {
+		padding-top: 290px;
+		background: url('../images/Catalog/Rating.png') 35px 99% no-repeat;
+	}
+
+	.similar_tires_items h2 {
+		margin: 10px 0;
+		color: black;
+		text-shadow: none;
+	}
+
+	.similar_tires_items h2 > span {
+		text-transform: uppercase;
+	}
+
+	.similar_tires_items p {
+		margin: 40px 0 16px;
+	}
+
+	.similar_tires_items .button_price {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	.all_tires a {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		margin: 0 auto;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		text-decoration: none;
+	}
+
+	.all_tires .all_tires_btm {
+		width: 200px;
+	    font-size: 14px; 
+	    border: transparent;   
+	    outline: none;
+	    padding: 12px 24px 12px 24px;
+		background-color: #EFD8C3;
+	    margin: 0;
+		border-radius: 5px;
+		color: #FF7E00;
+		cursor: pointer;
+		margin-bottom: 50px;
+	}
+
+	@media only all and (max-width: 1440px) {
+		ul.breadcrumb {
+			margin: 0 20px;
+		}
+
+		.main_tire > h1 {
+			margin: 20px 20px;
+		}
+
+		.main_tire .info_coments {
+			margin: 0 20px;
+		}
+
+		.main_tire .main_tire_info_container {
+			margin: 50px 20px 25px;
+		}
+
+		.tire_tabs {
+			margin: 0 20px;
+		}
+
+		.similar_tires_items {
+			grid-gap: 10px 10px;
+			margin: 0 20px 30px;
+		}
+
+		.similar_tires_items .similar_tire_items_1,
+		.similar_tires_items .similar_tire_items_2,
+		.similar_tires_items .similar_tire_items_3,
+		.similar_tires_items .similar_tire_items_4 {
+			padding: 0 10px;
+		}
+
+		.similar_tires_itemss p {
+			margin: 25px 0 16px;
+		}
+	}
+
+	@media only all and (max-width: 1024px) {
+		.main_tire .main_tire_info_container {
+			-ms-grid-columns: 1.2fr 25px 1fr;
+			grid-template-columns: 1.2fr 1fr;
+		}
+
+		.main_tire_info_container .tire_short_description {
+			display: none;
+		}
+
+		.main_tire_info_container .item_card {
+			-ms-grid-row: 1;
+			-ms-grid-row-span: 1;
+			grid-row: 1 / 2;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 1;
+			grid-column: 2 / 3;
+		}
+
+		.main_tire > h1 {
+			font-size: 36px;
+		}
+
+		.main_tire_info_container .item_card h1 {
+			font-size: 36px;
+		}
+
+		.tire_description .description li {
+			width: 60%;
+		}
+
+		.tire_tabs #content-3 .content-3_container {
+			grid-template-rows: repeat(5, auto);
+		}
+
+		.tire_tabs #content-3 .content-3_container .garantee_point_1 {
+			-ms-grid-row: 4;
+			-ms-grid-row-span: 1;
+			grid-row: 4 / 5;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 2;
+			grid-column: 1 / 3;
+		}
+
+		.tire_tabs #content-3 .content-3_container .garantee_point_2 {
+			-ms-grid-column: 3;
+			-ms-grid-column-span: 2;
+			grid-column: 3 / 5;
+		}
+		
+		.tire_tabs #content-3 .content-3_container .garantee_point_3 {
+			-ms-grid-row: 5;
+			-ms-grid-row-span: 1;
+			grid-row: 5 / 6;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 2;
+			grid-column: 1 / 3;
+		}
+
+		.tire_tabs #content-3 .content-3_container .garantee_point_4 {
+			-ms-grid-row: 5;
+			-ms-grid-row-span: 1;
+			grid-row: 5 / 6;
+			-ms-grid-column: 3;
+			-ms-grid-column-span: 2;
+			grid-column: 3 / 5;
+		}
+
+		.similar_tires_items {
+			-ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.similar_tires_items .similar_tire_items_4 {
+			display: none;
+		}
+	}
+
+	@media only all and (max-width: 640px) {
+		.main_tire > h1 {
+			margin: 20px 10px;
+			font-size: 26px;
+		}
+
+		.main_tire .info_coments {
+			margin: 0 10px;
+		}
+
+		.main_tire .main_tire_info_container {
+			margin: 50px 10px 25px;
+		}
+
+		.tire_tabs {
+			margin: 0 10px;
+		}
+
+		.similar_tires_items {
+			margin: 0 10px 30px;
+		}
+
+		.main_tire .main_tire_info_container {
+			display: -ms-grid;
+			display: grid;
+			-ms-grid-rows: auto 0 auto;
+			grid-template-rows: auto auto;
+			-ms-grid-columns: auto;
+			grid-template-columns: auto;
+		}
+
+		.main_tire_info_container .item_card {
+			-ms-grid-row: 2;
+			-ms-grid-row-span: 1;
+			grid-row: 2 / 3;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+			padding: 20px 20px 24px;
+		}
+
+		button.exclusive {
+			margin-right: 10px;
+		}
+
+		.tire_tabs > label {
+			padding: 2px 2px;
+			font-size: 16px;
+		}
+
+		.tire_tabs #content-1 .content-1_container {
+			-ms-grid-columns: 1fr;
+			grid-template-columns: 1fr;
+			-ms-grid-rows: auto 0 auto 0 auto 0 auto 0 auto 0 auto;
+			grid-template-rows: repeat(6, auto);
+		}
+
+		.tire_tabs #content-1 .content-1_container p:nth-of-type(2) {
+			-ms-grid-row: 2;
+			-ms-grid-row-span: 1;
+			grid-row: 2 / 3;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+			margin-top: 16px;
+		}
+
+		.tire_tabs #content-1 .content-1_container h2 {
+			-ms-grid-row: 3;
+			-ms-grid-row-span: 1;
+			grid-row: 3 / 4;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+		}
+
+		.tire_tabs #content-1 .content-1_container p:nth-of-type(3) {
+			-ms-grid-row: 4;
+			-ms-grid-row-span: 1;
+			grid-row: 4 / 5;
+		}
+
+		.tire_tabs #content-1 .content-1_container p:last-of-type {
+			-ms-grid-row: 5;
+			-ms-grid-row-span: 1;
+			grid-row: 5 / 6;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+			margin-top: 16px;
+		}
+
+		.tire_description .description li {
+			width: 100%;
+		}
+
+		.tire_tabs #content-3 .content-3_container {
+			grid-template-rows: repeat(9, auto);
+			grid-template-columns: auto;
+		}
+
+		.tire_tabs #content-3 .content-3_container h2:first-of-type {
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+			margin-right: 0;
+		}
+
+		.tire_tabs #content-3 .content-3_container p:first-of-type {
+			-ms-grid-row: 2;
+			-ms-grid-row-span: 1;
+			grid-row: 2 / 3;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+			margin-right: 0;
+		}
+
+		.tire_tabs #content-3 .content-3_container h2:nth-of-type(2) {
+			-ms-grid-row: 3;
+			-ms-grid-row-span: 1;
+			grid-row: 3 / 4;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+		}
+
+		.tire_tabs #content-3 .content-3_container p:nth-of-type(2) {
+			-ms-grid-row: 4;
+			-ms-grid-row-span: 1;
+			grid-row: 4 / 5;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+		}
+
+		.tire_tabs #content-3 .content-3_container h2:last-of-type {
+			-ms-grid-row: 5;
+			-ms-grid-row-span: 1;
+			grid-row: 5 / 6;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+		}
+
+		.tire_tabs #content-3 .content-3_container .garantee_point_1 {
+			-ms-grid-row: 6;
+			-ms-grid-row-span: 1;
+			grid-row: 6 / 7;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+		}
+
+		.tire_tabs #content-3 .content-3_container .garantee_point_2 {
+			-ms-grid-row: 7;
+			-ms-grid-row-span: 1;
+			grid-row: 7 / 8;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+		}
+		
+		.tire_tabs #content-3 .content-3_container .garantee_point_3 {
+			-ms-grid-row: 8;
+			-ms-grid-row-span: 1;
+			grid-row: 8 / 9;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+		}
+
+		.tire_tabs #content-3 .content-3_container .garantee_point_4 {
+			-ms-grid-row: 9;
+			-ms-grid-row-span: 1;
+			grid-row: 9 / 10;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			grid-column: 1 / 2;
+		}
+
+		.tire_tabs #content-3 .content-3_container .garantee_point_1,
+		.tire_tabs #content-3 .content-3_container .garantee_point_2,
+		.tire_tabs #content-3 .content-3_container .garantee_point_3,
+		.tire_tabs #content-3 .content-3_container .garantee_point_4 {
+			padding-left: 60px;
+		}
+
+		.similar_tires_items {
+			-ms-grid-columns: 1fr 10px 1fr;
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.similar_tires_items .similar_tire_items_1,
+		.similar_tires_items .similar_tire_items_2 {
+			background-size: 60%;
+			padding: 0 5px;
+		}
+
+		.similar_tires_items .rating_coments {
+			padding-top: 112%;
+		}
+
+		.similar_tires_items .similar_tire_items_3 {
+			display: none;
+		}
+
+		.similar_tires_items h2 {
+			font-size: 18px;
+		}
+
+		.similar_tires_items p {
+			margin: 20px 0 16px;
+		}
+	}
